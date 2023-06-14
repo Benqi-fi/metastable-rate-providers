@@ -32,6 +32,6 @@ contract SAvaxRateProvide is IRateProvider {
      * @return the value of wstETH in terms of stETH
      */
     function getRate() external view override returns (uint256) {
-        return stakedAVAX.getSharesByPooledAvax(1e18);
+        return stakedAVAX.getPooledAvaxByShares(1e18);
     }
 }
